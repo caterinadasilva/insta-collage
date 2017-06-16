@@ -50,6 +50,13 @@ border-spacing: 0;
 
 /* ESTILOS BÁSICOS */
 
+a, a:hover, a:focus, a:active, button {
+    transition: .5s all ease;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+}
+
 /*INPUT CHECK*/
 input[type|=check] {
 display: inline-block;
@@ -88,6 +95,22 @@ body {
 	height: 160px;
 	color: transparent;
 }
+nav {
+    display: flex;
+    align-items: center;
+}
+label {
+    margin: 1em auto;
+}
+#select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+option {
+	color: darkgrey;
+}
 footer {
     position: fixed;
     bottom: 0;
@@ -106,4 +129,32 @@ footer {
 }
 #photo-library img {
     width: 32.5%;
+}
+.form-group input {
+    background-color: rgba(255,255,255,.2);
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    padding: 1em;
+    line-height: 1rem;
+    height: initial;
+    font-size: 1rem;
+}
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+    padding: 1em;
+    font-weight: bold;
+    border-color: rgba(255,255,255,.2);
+}
+.btn-default:hover {
+	color: #fff;
+    background-color: rgba(255,255,255,.2);
+}
+.top {
+    margin: 3em 0 1em;
+}
+.bot {
+    margin: 1em 0 3em;
 }
