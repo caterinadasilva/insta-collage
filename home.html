@@ -15,24 +15,42 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 </head>
 <body>
-<menu>
-	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-</menu>
 <header>
 	<div class="container">
 		<div class="row">
-			
+			<div class="col-xs-6">
+				<div class="photo-box" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+				<div class="photo-box" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+			</div>
+			<div class="col-xs-6">
+				<div class="photo-box big" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+			</div>
 		</div>
 	</div>
 </header>
-<section id="" >
+<section id="logo">
 	<div class="container">
 		<div class="row">
-			
+			<div class="col-xs-12">
+				<h1 class="brand">Instamiau</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="photo-library" >
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<img id="foto1" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/1/" alt="Gatito atento">
+				<img id="foto2" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/2/" alt="Gatito enojado">
+				<img id="foto3" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/3/" alt="Gatito impaciente">
+				<img id="foto4" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/4/" alt="Gatito de perfil">
+				<img id="foto5" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/5/" alt="Gatito juguetón">
+				<img id="foto6" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/6/" alt="Pandilla de gatitos">
+				<img id="foto7" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/7/" alt="Gatito croqueto">
+				<img id="foto8" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/8/" alt="Gatito gordito">
+				<img id="foto9" draggable="true" ondragstart="drag(event)" src="http://lorempixel.com/640/480/cats/9/" alt="Gatito gris">
+			</div>
 		</div>
 	</div>
 </section>
@@ -49,4 +67,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 </html>

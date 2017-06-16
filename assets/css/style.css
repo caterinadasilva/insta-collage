@@ -71,9 +71,9 @@ margin: 0;
 body {
     color: #fff;
 	background-image: url('../img/bg.png');
-	background-size: 100% 100vh;
+	background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 .container {
     max-width: 480px;
@@ -93,4 +93,17 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+/*PHOTOBOOTH*/
+.photo-box {
+	min-height: 150px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.photo-box img {
+    width: 100%;
+}
+#photo-library img {
+    width: 32.5%;
 }
