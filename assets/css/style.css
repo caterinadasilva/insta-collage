@@ -119,13 +119,25 @@ footer {
 }
 
 /*PHOTOBOOTH*/
+header .container {
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+	padding: 15px 30px;
+}
 .photo-box {
-	min-height: 150px;
-    border: 2px solid black;
-    margin-top: 20px;
+    height: 200px;
+    border: 1px solid rgba(0,0,0,.3);
+    margin: 15px 0;
+    overflow: hidden;
+}
+.photo-box + .photo-box {
+	margin-top: 30px;
+}
+.photo-box.big {
+    height: 430px;
 }
 .photo-box img {
-    width: 100%;
+    max-height: 100%;
 }
 #photo-library img {
     width: 32.5%;
@@ -155,6 +167,36 @@ footer {
 .top {
     margin: 3em 0 1em;
 }
+.borde-o {
+    position: relative;
+}
+.borde-o:before, .borde-o:after {
+    position: absolute;
+    width: 45%;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: rgba(255,255,255,.4);
+    top: 7px;
+}
+.borde-o:before {
+	left: 0;
+}
+.borde-o:after {
+	right: 0;
+}
 .bot {
     margin: 1em 0 3em;
+}
+footer small {
+    font-size: 80%;
+    margin: 1em;
+    display: block;
+}
+.foo-btn {
+    border: 1px solid;
+    background-color: rgba(255,255,255,.2);
+}
+.foo-btn p {
+	line-height: 5em;
 }
